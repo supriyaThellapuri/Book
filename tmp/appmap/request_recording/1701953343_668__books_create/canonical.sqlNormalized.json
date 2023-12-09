@@ -1,0 +1,4 @@
+[
+  "insert into book_table (isbn,address,author,available,book_code,book_name,description,genre,language,page_count,price,publications,quantity,id) values (?,?,?,?,?,?,?,?,?,?,?,?,?,?)",
+  "select next value for book_table_seq"
+]

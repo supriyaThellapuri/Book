@@ -1,0 +1,6 @@
+[
+  "com/example/books/controller",
+  "com/example/books/dto",
+  "com/example/books/entity",
+  "com/example/books/service"
+]

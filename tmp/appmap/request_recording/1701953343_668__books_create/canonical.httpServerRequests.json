@@ -1,0 +1,7 @@
+[
+  {
+    "route": "POST /books/create",
+    "parameters": "()",
+    "status": 201
+  }
+]

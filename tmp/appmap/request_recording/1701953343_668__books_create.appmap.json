@@ -1,0 +1,828 @@
+{
+  "events": [
+    {
+      "event": "call",
+      "http_server_request": {
+        "headers": {
+          "sec-fetch-mode": "cors",
+          "content-length": "376",
+          "referer": "http://localhost:9090/swagger-ui/index.html",
+          "sec-fetch-site": "same-origin",
+          "accept-language": "en-US,en;q=0.9,te;q=0.8",
+          "origin": "http://localhost:9090",
+          "accept": "*/*",
+          "sec-ch-ua": "\"Google Chrome\";v=\"119\", \"Chromium\";v=\"119\", \"Not?A_Brand\";v=\"24\"",
+          "sec-ch-ua-mobile": "?0",
+          "sec-ch-ua-platform": "\"Windows\"",
+          "host": "localhost:9090",
+          "connection": "keep-alive",
+          "content-type": "application/json",
+          "accept-encoding": "gzip, deflate, br",
+          "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36",
+          "sec-fetch-dest": "empty"
+        },
+        "normalized_path_info": "/books/create",
+        "path_info": "/books/create",
+        "protocol": "HTTP/1.1",
+        "request_method": "POST"
+      },
+      "id": 1,
+      "thread_id": 105
+    },
+    {
+      "defined_class": "com.example.books.dto.BookDto",
+      "event": "call",
+      "id": 2,
+      "lineno": 145,
+      "method_id": "setISBN",
+      "parameters": [
+        {
+          "class": "java.lang.String",
+          "kind": "req",
+          "name": "ISBN",
+          "object_id": 1941102662,
+          "value": "978-2-2345-6789-0"
+        }
+      ],
+      "path": "com/example/books/dto/BookDto.java",
+      "receiver": {
+        "class": "com.example.books.dto.BookDto",
+        "object_id": 141304398,
+        "value": "com.example.books.dto.BookDto@86c224e"
+      },
+      "static": false,
+      "thread_id": 105
+    },
+    {
+      "elapsed": 0,
+      "event": "return",
+      "id": 3,
+      "parent_id": 2,
+      "thread_id": 105
+    },
+    {
+      "defined_class": "com.example.books.controller.BookController",
+      "event": "call",
+      "id": 4,
+      "lineno": 24,
+      "method_id": "display",
+      "parameters": [
+        {
+          "class": "com.example.books.dto.BookDto",
+          "kind": "req",
+          "name": "request",
+          "object_id": 141304398,
+          "value": "com.example.books.dto.BookDto@86c224e"
+        }
+      ],
+      "path": "com/example/books/controller/BookController.java",
+      "receiver": {
+        "class": "com.example.books.controller.BookController",
+        "object_id": 88599576,
+        "value": "com.example.books.controller.BookController@547ec18"
+      },
+      "static": false,
+      "thread_id": 105
+    },
+    {
+      "defined_class": "com.example.books.service.BookService",
+      "event": "call",
+      "id": 5,
+      "lineno": 19,
+      "method_id": "display",
+      "parameters": [
+        {
+          "class": "com.example.books.dto.BookDto",
+          "kind": "req",
+          "name": "request",
+          "object_id": 141304398,
+          "value": "com.example.books.dto.BookDto@86c224e"
+        }
+      ],
+      "path": "com/example/books/service/BookService.java",
+      "receiver": {
+        "class": "com.example.books.service.BookService",
+        "object_id": 1605538905,
+        "value": "com.example.books.service.BookService@5fb29459"
+      },
+      "static": false,
+      "thread_id": 105
+    },
+    {
+      "defined_class": "com.example.books.entity.BookDetails",
+      "event": "call",
+      "id": 6,
+      "lineno": 53,
+      "method_id": "setId",
+      "parameters": [
+        {
+          "class": "java.lang.Integer",
+          "kind": "req",
+          "name": "id",
+          "object_id": 403949627,
+          "value": "0"
+        }
+      ],
+      "path": "com/example/books/entity/BookDetails.java",
+      "receiver": {
+        "class": "com.example.books.entity.BookDetails",
+        "object_id": 886654035,
+        "value": "com.example.books.entity.BookDetails@34d94453"
+      },
+      "static": false,
+      "thread_id": 105
+    },
+    {
+      "elapsed": 0.00025475,
+      "event": "return",
+      "id": 7,
+      "parent_id": 6,
+      "thread_id": 105
+    },
+    {
+      "defined_class": "com.example.books.entity.BookDetails",
+      "event": "call",
+      "id": 8,
+      "lineno": 61,
+      "method_id": "setBookCode",
+      "parameters": [
+        {
+          "class": "java.lang.String",
+          "kind": "req",
+          "name": "bookCode",
+          "object_id": 843711109,
+          "value": "XYZ789"
+        }
+      ],
+      "path": "com/example/books/entity/BookDetails.java",
+      "receiver": {
+        "class": "com.example.books.entity.BookDetails",
+        "object_id": 886654035,
+        "value": "com.example.books.entity.BookDetails@34d94453"
+      },
+      "static": false,
+      "thread_id": 105
+    },
+    {
+      "elapsed": 0,
+      "event": "return",
+      "id": 9,
+      "parent_id": 8,
+      "thread_id": 105
+    },
+    {
+      "defined_class": "com.example.books.entity.BookDetails",
+      "event": "call",
+      "id": 10,
+      "lineno": 69,
+      "method_id": "setBookName",
+      "parameters": [
+        {
+          "class": "java.lang.String",
+          "kind": "req",
+          "name": "bookName",
+          "object_id": 1838614144,
+          "value": "Data Science Essentials"
+        }
+      ],
+      "path": "com/example/books/entity/BookDetails.java",
+      "receiver": {
+        "class": "com.example.books.entity.BookDetails",
+        "object_id": 886654035,
+        "value": "com.example.books.entity.BookDetails@34d94453"
+      },
+      "static": false,
+      "thread_id": 105
+    },
+    {
+      "elapsed": 0,
+      "event": "return",
+      "id": 11,
+      "parent_id": 10,
+      "thread_id": 105
+    },
+    {
+      "defined_class": "com.example.books.entity.BookDetails",
+      "event": "call",
+      "id": 12,
+      "lineno": 77,
+      "method_id": "setAuthor",
+      "parameters": [
+        {
+          "class": "java.lang.String",
+          "kind": "req",
+          "name": "author",
+          "object_id": 1799575833,
+          "value": "Alice Johnson"
+        }
+      ],
+      "path": "com/example/books/entity/BookDetails.java",
+      "receiver": {
+        "class": "com.example.books.entity.BookDetails",
+        "object_id": 886654035,
+        "value": "com.example.books.entity.BookDetails@34d94453"
+      },
+      "static": false,
+      "thread_id": 105
+    },
+    {
+      "elapsed": 0.00083647,
+      "event": "return",
+      "id": 13,
+      "parent_id": 12,
+      "thread_id": 105
+    },
+    {
+      "defined_class": "com.example.books.entity.BookDetails",
+      "event": "call",
+      "id": 14,
+      "lineno": 85,
+      "method_id": "setPrice",
+      "parameters": [
+        {
+          "class": "java.lang.Double",
+          "kind": "req",
+          "name": "price",
+          "object_id": 356938750,
+          "value": "29.99"
+        }
+      ],
+      "path": "com/example/books/entity/BookDetails.java",
+      "receiver": {
+        "class": "com.example.books.entity.BookDetails",
+        "object_id": 886654035,
+        "value": "com.example.books.entity.BookDetails@34d94453"
+      },
+      "static": false,
+      "thread_id": 105
+    },
+    {
+      "elapsed": 0.00106818,
+      "event": "return",
+      "id": 15,
+      "parent_id": 14,
+      "thread_id": 105
+    },
+    {
+      "defined_class": "com.example.books.entity.BookDetails",
+      "event": "call",
+      "id": 16,
+      "lineno": 93,
+      "method_id": "setPublications",
+      "parameters": [
+        {
+          "class": "java.lang.String",
+          "kind": "req",
+          "name": "publications",
+          "object_id": 2012878329,
+          "value": "DataTech Books"
+        }
+      ],
+      "path": "com/example/books/entity/BookDetails.java",
+      "receiver": {
+        "class": "com.example.books.entity.BookDetails",
+        "object_id": 886654035,
+        "value": "com.example.books.entity.BookDetails@34d94453"
+      },
+      "static": false,
+      "thread_id": 105
+    },
+    {
+      "elapsed": 0,
+      "event": "return",
+      "id": 17,
+      "parent_id": 16,
+      "thread_id": 105
+    },
+    {
+      "defined_class": "com.example.books.entity.BookDetails",
+      "event": "call",
+      "id": 18,
+      "lineno": 101,
+      "method_id": "setQuantity",
+      "parameters": [
+        {
+          "class": "java.lang.String",
+          "kind": "req",
+          "name": "quantity",
+          "object_id": 571260544,
+          "value": "30"
+        }
+      ],
+      "path": "com/example/books/entity/BookDetails.java",
+      "receiver": {
+        "class": "com.example.books.entity.BookDetails",
+        "object_id": 886654035,
+        "value": "com.example.books.entity.BookDetails@34d94453"
+      },
+      "static": false,
+      "thread_id": 105
+    },
+    {
+      "elapsed": 0,
+      "event": "return",
+      "id": 19,
+      "parent_id": 18,
+      "thread_id": 105
+    },
+    {
+      "defined_class": "com.example.books.entity.BookDetails",
+      "event": "call",
+      "id": 20,
+      "lineno": 109,
+      "method_id": "setAddress",
+      "parameters": [
+        {
+          "class": "java.lang.String",
+          "kind": "req",
+          "name": "address",
+          "object_id": 1408671817,
+          "value": "456 Oak Avenue"
+        }
+      ],
+      "path": "com/example/books/entity/BookDetails.java",
+      "receiver": {
+        "class": "com.example.books.entity.BookDetails",
+        "object_id": 886654035,
+        "value": "com.example.books.entity.BookDetails@34d94453"
+      },
+      "static": false,
+      "thread_id": 105
+    },
+    {
+      "elapsed": 0,
+      "event": "return",
+      "id": 21,
+      "parent_id": 20,
+      "thread_id": 105
+    },
+    {
+      "defined_class": "com.example.books.entity.BookDetails",
+      "event": "call",
+      "id": 22,
+      "lineno": 117,
+      "method_id": "setDescription",
+      "parameters": [
+        {
+          "class": "java.lang.String",
+          "kind": "req",
+          "name": "description",
+          "object_id": 1971974218,
+          "value": "An in-depth exploration of data science principles"
+        }
+      ],
+      "path": "com/example/books/entity/BookDetails.java",
+      "receiver": {
+        "class": "com.example.books.entity.BookDetails",
+        "object_id": 886654035,
+        "value": "com.example.books.entity.BookDetails@34d94453"
+      },
+      "static": false,
+      "thread_id": 105
+    },
+    {
+      "elapsed": 0,
+      "event": "return",
+      "id": 23,
+      "parent_id": 22,
+      "thread_id": 105
+    },
+    {
+      "defined_class": "com.example.books.entity.BookDetails",
+      "event": "call",
+      "id": 24,
+      "lineno": 125,
+      "method_id": "setPageCount",
+      "parameters": [
+        {
+          "class": "java.lang.Integer",
+          "kind": "req",
+          "name": "pageCount",
+          "object_id": 1383818975,
+          "value": "400"
+        }
+      ],
+      "path": "com/example/books/entity/BookDetails.java",
+      "receiver": {
+        "class": "com.example.books.entity.BookDetails",
+        "object_id": 886654035,
+        "value": "com.example.books.entity.BookDetails@34d94453"
+      },
+      "static": false,
+      "thread_id": 105
+    },
+    {
+      "elapsed": 0,
+      "event": "return",
+      "id": 25,
+      "parent_id": 24,
+      "thread_id": 105
+    },
+    {
+      "defined_class": "com.example.books.entity.BookDetails",
+      "event": "call",
+      "id": 26,
+      "lineno": 133,
+      "method_id": "setGenre",
+      "parameters": [
+        {
+          "class": "java.lang.String",
+          "kind": "req",
+          "name": "genre",
+          "object_id": 365177518,
+          "value": "Data Science"
+        }
+      ],
+      "path": "com/example/books/entity/BookDetails.java",
+      "receiver": {
+        "class": "com.example.books.entity.BookDetails",
+        "object_id": 886654035,
+        "value": "com.example.books.entity.BookDetails@34d94453"
+      },
+      "static": false,
+      "thread_id": 105
+    },
+    {
+      "elapsed": 0,
+      "event": "return",
+      "id": 27,
+      "parent_id": 26,
+      "thread_id": 105
+    },
+    {
+      "defined_class": "com.example.books.entity.BookDetails",
+      "event": "call",
+      "id": 28,
+      "lineno": 141,
+      "method_id": "setLanguage",
+      "parameters": [
+        {
+          "class": "java.lang.String",
+          "kind": "req",
+          "name": "language",
+          "object_id": 1943418039,
+          "value": "English"
+        }
+      ],
+      "path": "com/example/books/entity/BookDetails.java",
+      "receiver": {
+        "class": "com.example.books.entity.BookDetails",
+        "object_id": 886654035,
+        "value": "com.example.books.entity.BookDetails@34d94453"
+      },
+      "static": false,
+      "thread_id": 105
+    },
+    {
+      "elapsed": 0,
+      "event": "return",
+      "id": 29,
+      "parent_id": 28,
+      "thread_id": 105
+    },
+    {
+      "defined_class": "com.example.books.entity.BookDetails",
+      "event": "call",
+      "id": 30,
+      "lineno": 149,
+      "method_id": "setISBN",
+      "parameters": [
+        {
+          "class": "java.lang.String",
+          "kind": "req",
+          "name": "ISBN",
+          "object_id": 1941102662,
+          "value": "978-2-2345-6789-0"
+        }
+      ],
+      "path": "com/example/books/entity/BookDetails.java",
+      "receiver": {
+        "class": "com.example.books.entity.BookDetails",
+        "object_id": 886654035,
+        "value": "com.example.books.entity.BookDetails@34d94453"
+      },
+      "static": false,
+      "thread_id": 105
+    },
+    {
+      "elapsed": 0,
+      "event": "return",
+      "id": 31,
+      "parent_id": 30,
+      "thread_id": 105
+    },
+    {
+      "event": "call",
+      "id": 32,
+      "sql_query": {
+        "database_type": "H2",
+        "sql": "select next value for book_table_seq"
+      },
+      "thread_id": 105
+    },
+    {
+      "elapsed": 0.0023222,
+      "event": "return",
+      "id": 33,
+      "parent_id": 32,
+      "thread_id": 105
+    },
+    {
+      "event": "call",
+      "id": 34,
+      "sql_query": {
+        "database_type": "H2",
+        "sql": "insert into book_table (isbn,address,author,available,book_code,book_name,description,genre,language,page_count,price,publications,quantity,id) values (?,?,?,?,?,?,?,?,?,?,?,?,?,?)"
+      },
+      "thread_id": 105
+    },
+    {
+      "elapsed": 0.00025259,
+      "event": "return",
+      "id": 35,
+      "parent_id": 34,
+      "thread_id": 105
+    },
+    {
+      "elapsed": 0.10517201,
+      "event": "return",
+      "id": 36,
+      "parent_id": 5,
+      "return_value": {
+        "class": "com.example.books.entity.BookDetails",
+        "object_id": 886654035,
+        "value": "com.example.books.entity.BookDetails@34d94453"
+      },
+      "thread_id": 105
+    },
+    {
+      "elapsed": 0.10567804,
+      "event": "return",
+      "id": 37,
+      "parent_id": 4,
+      "return_value": {
+        "class": "org.springframework.http.ResponseEntity",
+        "object_id": 1309133978,
+        "value": "<201 CREATED Created,com.example.books.entity.BookDetails@34d94453,[]>"
+      },
+      "thread_id": 105
+    },
+    {
+      "defined_class": "com.example.books.entity.BookDetails",
+      "event": "call",
+      "id": 38,
+      "lineno": 153,
+      "method_id": "isAvailable",
+      "path": "com/example/books/entity/BookDetails.java",
+      "receiver": {
+        "class": "com.example.books.entity.BookDetails",
+        "object_id": 886654035,
+        "value": "com.example.books.entity.BookDetails@34d94453"
+      },
+      "static": false,
+      "thread_id": 105
+    },
+    {
+      "elapsed": 0.00222003,
+      "event": "return",
+      "id": 39,
+      "parent_id": 38,
+      "return_value": {
+        "class": "java.lang.Boolean",
+        "object_id": 1907823615,
+        "value": "false"
+      },
+      "thread_id": 105
+    },
+    {
+      "elapsed": 0.18819104,
+      "event": "return",
+      "http_server_response": {
+        "headers": {
+          "Transfer-Encoding": "chunked",
+          "Keep-Alive": "timeout=60",
+          "Connection": "keep-alive",
+          "Date": "Thu, 07 Dec 2023 12:49:05 GMT",
+          "Content-Type": "application/json"
+        },
+        "status": 201
+      },
+      "id": 40,
+      "parent_id": 1,
+      "thread_id": 105
+    }
+  ],
+  "version": "1.2",
+  "metadata": {
+    "name": "POST /books/create (201) - 18:19:03.668",
+    "app": "Books",
+    "language": {
+      "name": "java",
+      "version": "17.0.9+8-LTS",
+      "engine": "OpenJDK 64-Bit Server VM"
+    },
+    "client": {
+      "name": "appmap-java",
+      "url": "https://github.com/appland/appmap-java"
+    },
+    "recorder": {
+      "name": "request_recording",
+      "type": "requests"
+    },
+    "recording": {}
+  },
+  "classMap": [
+    {
+      "children": [
+        {
+          "children": [
+            {
+              "children": [
+                {
+                  "children": [
+                    {
+                      "children": [
+                        {
+                          "name": "isAvailable",
+                          "type": "function",
+                          "static": false,
+                          "location": "com/example/books/entity/BookDetails.java:153"
+                        },
+                        {
+                          "name": "setBookCode",
+                          "type": "function",
+                          "static": false,
+                          "location": "com/example/books/entity/BookDetails.java:61"
+                        },
+                        {
+                          "name": "setPublications",
+                          "type": "function",
+                          "static": false,
+                          "location": "com/example/books/entity/BookDetails.java:93"
+                        },
+                        {
+                          "name": "setISBN",
+                          "type": "function",
+                          "static": false,
+                          "location": "com/example/books/entity/BookDetails.java:149"
+                        },
+                        {
+                          "name": "setAddress",
+                          "type": "function",
+                          "static": false,
+                          "location": "com/example/books/entity/BookDetails.java:109"
+                        },
+                        {
+                          "name": "setLanguage",
+                          "type": "function",
+                          "static": false,
+                          "location": "com/example/books/entity/BookDetails.java:141"
+                        },
+                        {
+                          "name": "setDescription",
+                          "type": "function",
+                          "static": false,
+                          "location": "com/example/books/entity/BookDetails.java:117"
+                        },
+                        {
+                          "name": "setBookName",
+                          "type": "function",
+                          "static": false,
+                          "location": "com/example/books/entity/BookDetails.java:69"
+                        },
+                        {
+                          "name": "setQuantity",
+                          "type": "function",
+                          "static": false,
+                          "location": "com/example/books/entity/BookDetails.java:101"
+                        },
+                        {
+                          "name": "setPageCount",
+                          "type": "function",
+                          "static": false,
+                          "location": "com/example/books/entity/BookDetails.java:125"
+                        },
+                        {
+                          "name": "setAuthor",
+                          "type": "function",
+                          "static": false,
+                          "location": "com/example/books/entity/BookDetails.java:77"
+                        },
+                        {
+                          "name": "setPrice",
+                          "type": "function",
+                          "static": false,
+                          "location": "com/example/books/entity/BookDetails.java:85"
+                        },
+                        {
+                          "name": "setGenre",
+                          "type": "function",
+                          "static": false,
+                          "location": "com/example/books/entity/BookDetails.java:133"
+                        },
+                        {
+                          "name": "setId",
+                          "type": "function",
+                          "static": false,
+                          "location": "com/example/books/entity/BookDetails.java:53"
+                        }
+                      ],
+                      "name": "BookDetails",
+                      "type": "class"
+                    }
+                  ],
+                  "name": "entity",
+                  "type": "package"
+                },
+                {
+                  "children": [
+                    {
+                      "children": [
+                        {
+                          "name": "display",
+                          "type": "function",
+                          "static": false,
+                          "location": "com/example/books/service/BookService.java:19"
+                        }
+                      ],
+                      "name": "BookService",
+                      "type": "class"
+                    }
+                  ],
+                  "name": "service",
+                  "type": "package"
+                },
+                {
+                  "children": [
+                    {
+                      "children": [
+                        {
+                          "name": "display",
+                          "type": "function",
+                          "static": false,
+                          "location": "com/example/books/controller/BookController.java:24"
+                        }
+                      ],
+                      "name": "BookController",
+                      "type": "class"
+                    }
+                  ],
+                  "name": "controller",
+                  "type": "package"
+                },
+                {
+                  "children": [
+                    {
+                      "children": [
+                        {
+                          "name": "setISBN",
+                          "type": "function",
+                          "static": false,
+                          "location": "com/example/books/dto/BookDto.java:145"
+                        }
+                      ],
+                      "name": "BookDto",
+                      "type": "class"
+                    }
+                  ],
+                  "name": "dto",
+                  "type": "package"
+                }
+              ],
+              "name": "books",
+              "type": "package"
+            }
+          ],
+          "name": "example",
+          "type": "package"
+        }
+      ],
+      "name": "com",
+      "type": "package"
+    },
+    {
+      "type": "http",
+      "name": "HTTP server requests",
+      "children": [
+        {
+          "type": "route",
+          "name": "POST /books/create"
+        }
+      ]
+    },
+    {
+      "type": "database",
+      "name": "Database",
+      "children": [
+        {
+          "type": "query",
+          "name": "select next value for book_table_seq"
+        },
+        {
+          "type": "query",
+          "name": "insert into book_table (isbn,address,author,available,book_code,book_name,description,genre,language,page_count,price,publications,quantity,id) values (?,?,?,?,?,?,?,?,?,?,?,?,?,?)"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+[
+  {
+    "caller": "POST /books/create",
+    "callee": "com/example"
+  },
+  {
+    "caller": "com/example",
+    "callee": "insert into book_table (isbn,address,author,available,book_code,book_name,description,genre,language,page_count,price,publications,quantity,id) values (?,?,?,?,?,?,?,?,?,?,?,?,?,?)"
+  },
+  {
+    "caller": "com/example",
+    "callee": "select next value for book_table_seq"
+  }
+]

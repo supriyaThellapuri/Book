@@ -1,0 +1,194 @@
+[
+  {
+    "children": [
+      {
+        "children": [
+          {
+            "children": [
+              {
+                "children": [
+                  {
+                    "children": [
+                      {
+                        "name": "isAvailable",
+                        "type": "function",
+                        "static": false,
+                        "location": "com/example/books/entity/BookDetails.java:153"
+                      },
+                      {
+                        "name": "setBookCode",
+                        "type": "function",
+                        "static": false,
+                        "location": "com/example/books/entity/BookDetails.java:61"
+                      },
+                      {
+                        "name": "setPublications",
+                        "type": "function",
+                        "static": false,
+                        "location": "com/example/books/entity/BookDetails.java:93"
+                      },
+                      {
+                        "name": "setISBN",
+                        "type": "function",
+                        "static": false,
+                        "location": "com/example/books/entity/BookDetails.java:149"
+                      },
+                      {
+                        "name": "setAddress",
+                        "type": "function",
+                        "static": false,
+                        "location": "com/example/books/entity/BookDetails.java:109"
+                      },
+                      {
+                        "name": "setLanguage",
+                        "type": "function",
+                        "static": false,
+                        "location": "com/example/books/entity/BookDetails.java:141"
+                      },
+                      {
+                        "name": "setDescription",
+                        "type": "function",
+                        "static": false,
+                        "location": "com/example/books/entity/BookDetails.java:117"
+                      },
+                      {
+                        "name": "setBookName",
+                        "type": "function",
+                        "static": false,
+                        "location": "com/example/books/entity/BookDetails.java:69"
+                      },
+                      {
+                        "name": "setQuantity",
+                        "type": "function",
+                        "static": false,
+                        "location": "com/example/books/entity/BookDetails.java:101"
+                      },
+                      {
+                        "name": "setPageCount",
+                        "type": "function",
+                        "static": false,
+                        "location": "com/example/books/entity/BookDetails.java:125"
+                      },
+                      {
+                        "name": "setAuthor",
+                        "type": "function",
+                        "static": false,
+                        "location": "com/example/books/entity/BookDetails.java:77"
+                      },
+                      {
+                        "name": "setPrice",
+                        "type": "function",
+                        "static": false,
+                        "location": "com/example/books/entity/BookDetails.java:85"
+                      },
+                      {
+                        "name": "setGenre",
+                        "type": "function",
+                        "static": false,
+                        "location": "com/example/books/entity/BookDetails.java:133"
+                      },
+                      {
+                        "name": "setId",
+                        "type": "function",
+                        "static": false,
+                        "location": "com/example/books/entity/BookDetails.java:53"
+                      }
+                    ],
+                    "name": "BookDetails",
+                    "type": "class"
+                  }
+                ],
+                "name": "entity",
+                "type": "package"
+              },
+              {
+                "children": [
+                  {
+                    "children": [
+                      {
+                        "name": "display",
+                        "type": "function",
+                        "static": false,
+                        "location": "com/example/books/service/BookService.java:19"
+                      }
+                    ],
+                    "name": "BookService",
+                    "type": "class"
+                  }
+                ],
+                "name": "service",
+                "type": "package"
+              },
+              {
+                "children": [
+                  {
+                    "children": [
+                      {
+                        "name": "display",
+                        "type": "function",
+                        "static": false,
+                        "location": "com/example/books/controller/BookController.java:24"
+                      }
+                    ],
+                    "name": "BookController",
+                    "type": "class"
+                  }
+                ],
+                "name": "controller",
+                "type": "package"
+              },
+              {
+                "children": [
+                  {
+                    "children": [
+                      {
+                        "name": "setISBN",
+                        "type": "function",
+                        "static": false,
+                        "location": "com/example/books/dto/BookDto.java:145"
+                      }
+                    ],
+                    "name": "BookDto",
+                    "type": "class"
+                  }
+                ],
+                "name": "dto",
+                "type": "package"
+              }
+            ],
+            "name": "books",
+            "type": "package"
+          }
+        ],
+        "name": "example",
+        "type": "package"
+      }
+    ],
+    "name": "com",
+    "type": "package"
+  },
+  {
+    "type": "http",
+    "name": "HTTP server requests",
+    "children": [
+      {
+        "type": "route",
+        "name": "POST /books/create"
+      }
+    ]
+  },
+  {
+    "type": "database",
+    "name": "Database",
+    "children": [
+      {
+        "type": "query",
+        "name": "select next value for book_table_seq"
+      },
+      {
+        "type": "query",
+        "name": "insert into book_table (isbn,address,author,available,book_code,book_name,description,genre,language,page_count,price,publications,quantity,id) values (?,?,?,?,?,?,?,?,?,?,?,?,?,?)"
+      }
+    ]
+  }
+]

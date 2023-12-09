@@ -1,0 +1,6 @@
+[
+  "com/example/books/controller/BookController",
+  "com/example/books/dto/BookDto",
+  "com/example/books/entity/BookDetails",
+  "com/example/books/service/BookService"
+]

@@ -1,0 +1,5 @@
+name: "Books"
+appmap_dir: "tmp/appmap"
+packages:
+- path: "com.example.books"
+- path: "META-INF"
